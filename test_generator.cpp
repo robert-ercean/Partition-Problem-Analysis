@@ -6,13 +6,14 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
     /* Choose a test case ID and append it to the test_cases.txt file */
-    if (argc != 3) {
-        cerr << "Usage: ./test_generator <test_id> <array_size>" << endl;
+    if (argc != 4) {
+        cerr << "Usage: ./test_generator <test_id> <array_size> <big_numbers_flag>" << endl;
         return 1;
     }
 
     int testID = stoi(argv[1]);
-    int array_size = stoi(argv[2]); 
+    int array_size = stoi(argv[2]);
+    int big_numbers = stoi(argv[3]);
 
     ofstream file(FILENAME, ios::app);
 
@@ -24,14 +25,22 @@ int main(int argc, char* argv[]) {
     /* Append the test ID and array size */
     file << testID << " " << array_size << " ";
 
-    /* Append the array elements */
-    /* Only this function should be changed when adding a new special
-     * test case */
-    // Test case 3: Huge array with huge elements 
-    // Test case 4: Small array with huge elements
-    for (int i = 0; i < array_size; i++) {
-        int val = 0xfffff + (4 * i);
-        file << val << " ";
+    if (big_numbers) {
+        /* We'll want to see the running time of the DP approach 
+        * against a huge total sum */
+        for (int i = 0; i < array_size; i++) {
+            int divider_metric = (int) pow(2, (15 - testID));
+            int val = (testID + 1) * 1000000 / divider_metric + (i * 20000); // Large values to increase sum
+            file << val << " ";
+        }
+    } else {
+        /* Append the array elements */
+        /* Only this function should be changed when adding a new special
+        * test case */
+        for (int i = 0; i < array_size; i++) {
+            int val = 10 + (i * 2);
+            file << val << " ";
+        }
     }
 
     file << endl;

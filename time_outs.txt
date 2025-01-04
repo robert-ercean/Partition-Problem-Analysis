@@ -1,0 +1,45 @@
+Running test case: 1
+dp_partition (Test ID: 1) - .050159400 seconds
+brute_partition (Test ID: 1) - .034101500 seconds
+Running test case: 2
+dp_partition (Test ID: 2) - .015145100 seconds
+brute_partition (Test ID: 2) - .014197100 seconds
+Running test case: 3
+dp_partition (Test ID: 3) - .009362400 seconds
+brute_partition (Test ID: 3) - .007672501 seconds
+Running test case: 4
+dp_partition (Test ID: 4) - .008172700 seconds
+brute_partition (Test ID: 4) - .007888000 seconds
+Running test case: 5
+dp_partition (Test ID: 5) - .009914000 seconds
+brute_partition (Test ID: 5) - .146771999 seconds
+Running test case: 6
+dp_partition (Test ID: 6) - .011176100 seconds
+brute_partition (Test ID: 6) - .006693700 seconds
+Running test case: 7
+dp_partition (Test ID: 7) - .011114900 seconds
+brute_partition (Test ID: 7) - 2.063914588 seconds
+Running test case: 8
+dp_partition (Test ID: 8) - .035246400 seconds
+brute_partition (Test ID: 8) - .011480999 seconds
+Running test case: 9
+dp_partition (Test ID: 9) - .044749200 seconds
+brute_partition (Test ID: 9) - .009651600 seconds
+Running test case: 10
+dp_partition (Test ID: 10) - .059640000 seconds
+brute_partition (Test ID: 10) - .011119000 seconds
+Running test case: 11
+dp_partition (Test ID: 11) - .156676099 seconds
+brute_partition (Test ID: 11) - .009037500 seconds
+Running test case: 12
+dp_partition (Test ID: 12) - .226312499 seconds
+brute_partition (Test ID: 12) - .011636800 seconds
+Running test case: 13
+dp_partition (Test ID: 13) - .466639397 seconds
+brute_partition (Test ID: 13) - .011151200 seconds
+Running test case: 14
+dp_partition (Test ID: 14) - .928440896 seconds
+brute_partition (Test ID: 14) - .010843400 seconds
+Running test case: 15
+dp_partition (Test ID: 15) - 5.844956375 seconds
+brute_partition (Test ID: 15) - .009967400 seconds
