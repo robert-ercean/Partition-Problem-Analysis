@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
         * test case */
         for (int i = 0; i < array_size; i++) {
             int val = 10 + (i * 2);
-            file << val << " ";
+            file << i << " ";
         }
     }
 
